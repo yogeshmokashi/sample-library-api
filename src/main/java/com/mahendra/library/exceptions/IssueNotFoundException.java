@@ -7,7 +7,7 @@ public class IssueNotFoundException extends RuntimeException {
 	}
 
 	public IssueNotFoundException() {
-		super("Book you were looking for doesn't exist in library yet !");
+		super("Issue you were looking for doesn't exist in library yet !");
 	}
 
 }
