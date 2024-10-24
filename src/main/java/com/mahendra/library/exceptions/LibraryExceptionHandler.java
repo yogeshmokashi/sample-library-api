@@ -20,6 +20,6 @@ public class LibraryExceptionHandler  {
 			result.put("Cause-by: ", ex.getCause().getMessage());
 			result.put("Exception: ", ex.getCause().getClass().getName());
 		}
-		return new ResponseEntity<Map<String,String>>(result, HttpStatus.BAD_REQUEST);
+		return new ResponseEntity<Map<String,String>>(result, HttpStatus.NOT_FOUND);
 	}
 }
